@@ -1,5 +1,7 @@
 ---
-const pageTitle = "My Home Page"
+import "../styles/global.css";
+
+const pageTitle = "My Home Page";
 ---
 
 <html lang="en">
@@ -11,10 +13,11 @@ const pageTitle = "My Home Page"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </nav>
     <h1>{pageTitle}</h1>
   </body>
 </html>
