@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
 const pageTitle = "About Me";
 
 const identity = {
@@ -38,12 +39,7 @@ const skillColor = "crimson";
   </head>
 </html>
 <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-  </nav>
-
+  <Navigation />
   <h1>{pageTitle}</h1>
 
   <p>I am working thru Astro intro tutorial</p>
