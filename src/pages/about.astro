@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -38,8 +40,8 @@ const skillColor = "crimson";
     </style>
   </head>
 </html>
-<body>
-  <Navigation />
+<>
+  <Header />
   <h1>{pageTitle}</h1>
 
   <p>I am working thru Astro intro tutorial</p>
@@ -74,4 +76,11 @@ const skillColor = "crimson";
       <p>My goal is not 3 days.</p>
     )
   }
+  <Footer />
+
+    <script>
+          import "../scripts/menu.js";
+
+    </script>
 </body>
+</html>
